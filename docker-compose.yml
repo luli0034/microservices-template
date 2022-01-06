@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  services:
+    container_name: servives
+    build: ./services/
+    ports:
+      - 8080:8080
+    volumes:
+      - type: bind
+        source: ./services/app
+        target: /app/app

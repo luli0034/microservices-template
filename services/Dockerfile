@@ -12,4 +12,6 @@ RUN pip install --upgrade pip \
     && pip install -r /app/requirements.txt \
     && rm -rf /root/.cache/pip
 
-COPY . /app/
+COPY ./app /app/
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080", "--reload"]
