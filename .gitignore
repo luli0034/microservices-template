@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 /py37
+/postgres_data
