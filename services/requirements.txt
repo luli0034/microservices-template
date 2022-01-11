@@ -2,3 +2,4 @@ fastapi==0.70.1
 databases[postgresql]==0.5.3
 SQLAlchemy==1.4.29
 uvicorn==0.16.0
+psycopg2==2.7.7
